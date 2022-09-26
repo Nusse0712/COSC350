@@ -19,7 +19,7 @@ done
 rows=`expr $base / 2`
 astericks=1
 spaces=$base
-baseLimit=`expr $base - 2`
+baseLimit=`expr $base - 1`
 sum=`expr $base + $tail`
 #printing the first section of the arrow
 for i in $(seq 1 $rows);

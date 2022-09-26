@@ -18,14 +18,13 @@ do
 	a=`expr $base % 2`
 done
 rows=`expr $base / 2`
-baseLimit=`expr $base - 1`
 sum=`expr $tail + $base`
 astericks=1
 #printing first section of the arrow
 for i in $(seq 1 $rows);
 do
 	#prints an amount of spaces based off the value of the baseLimit variable
-	for j in $(seq 1 $baseLimit);
+	for j in $(seq 1 $tail);
 	do
 		echo -n "  "
 	done
@@ -50,7 +49,7 @@ echo
 for i in $(seq 1 $rows);
 do
 	#prints an amount of spaces based off the value of the baseLimit variable
-	for j in $(seq 1 $baseLimit);
+	for j in $(seq 1 $tail);
 	do
 		echo -n "  "
 	done
